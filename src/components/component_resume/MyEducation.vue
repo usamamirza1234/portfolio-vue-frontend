@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <div class="education"> <h2 class="title title--h2 "><span class="box icon-box"><i class="font-icon feathericon-book-open"></i></span>Education</h2></div>
     <div class="timeline">
       <!-- Item -->

@@ -9,7 +9,6 @@ import "@/assets/styles/base_style.css";
 import "swiper/swiper-bundle.css";
 import VueRouter from 'vue-router'
 
-
 Vue.config.productionTip = false
 Vue.use(VueRouter)
 Vue.use(BootstrapVue)
@@ -17,12 +16,14 @@ Vue.component('alert-icon', AlertIcon)
 
 import Index from './pages/Index.vue'
 import Resume from './pages/Resume.vue'
-// import SideBar from "@/components/SideBar.vue";
+import Contact from './pages/Contact.vue'
+import PageNotFound from "@/pages/PageNotFound.vue";
 
-const routes = [
-  { path: '/resume', component: Resume },
-  { path: '/', component: Index }
-];
+const routes = [{path: '/contact', component: Contact, name: "Contact me"}, {path: '/resume', component: Resume}, {
+  path: '/', component: Index
+}, {
+  path: '/:catchAll(.*)*', name: "PageNotFound", component: PageNotFound,
+},];
 
 const router = new VueRouter({
   routes: routes,

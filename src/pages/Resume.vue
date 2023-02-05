@@ -2,7 +2,10 @@
   <div class="col-12 col-md-12 col-xl-9">
     <div class="box-outer">
       <NavBar/>
-      <MySelf/>
+      <h1 class="title title--h1 title__separate">Resume</h1>
+      <MyEducation/>
+      <MyEducation/>
+      <MySkills/>
     </div>
   </div>
 </template>
@@ -10,14 +13,17 @@
 
 <script>
 import NavBar from "@/components/NavBar.vue";
-import MySelf from "@/components/component_index/MySelf.vue";
+import MyEducation from "@/components/component_resume/MyEducation.vue";
+import MySkills from "@/components/component_resume/MySkills.vue";
+
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Resume",
   components: {
     NavBar,
-    MySelf,
+    MyEducation,
+    MySkills,
   },
 }
 </script>
