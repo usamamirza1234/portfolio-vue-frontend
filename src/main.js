@@ -8,16 +8,16 @@ import AlertIcon from 'vue-ionicons/dist/ios-alert.vue'
 import "@/assets/styles/base_style.css";
 import "swiper/swiper-bundle.css";
 import VueRouter from 'vue-router'
+import Index from './pages/Index.vue'
+import Resume from './pages/Resume.vue'
+import Contact from './pages/Contact.vue'
+import PageNotFound from "@/pages/PageNotFound.vue";
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)
 Vue.use(BootstrapVue)
 Vue.component('alert-icon', AlertIcon)
 
-import Index from './pages/Index.vue'
-import Resume from './pages/Resume.vue'
-import Contact from './pages/Contact.vue'
-import PageNotFound from "@/pages/PageNotFound.vue";
 
 const routes = [{path: '/contact', component: Contact, name: "Contact me"}, {path: '/resume', component: Resume}, {
   path: '/', component: Index
@@ -27,7 +27,9 @@ const routes = [{path: '/contact', component: Contact, name: "Contact me"}, {pat
 
 const router = new VueRouter({
   routes: routes,
-  mode: 'history'
+  mode: 'history',
+  linkActiveClass: 'active-link',
+  linkExactActiveClass: 'exact-active-link',
 })
 new Vue({
   render: h => h(App),
