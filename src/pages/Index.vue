@@ -2,8 +2,8 @@
   <div class="col-12 col-md-12 col-xl-9">
     <div class="box-outer">
 
-      <NavBar/>
-      <MySelf/>
+      <NavBar />
+      <MySelf />
       <WhatDoing v-if=" tech_stacks_errors.length == 0 "  :tech_stacks="tech_stacks" :errors="tech_stacks_errors" />
       <MyTestimonials/>
       <MyClients/>
@@ -43,25 +43,9 @@ export default {
   },
   data: function () {
     return {
-      // technologies: [
-      //   {
-      //     name: "Backend Development",
-      //     description: 'Some Details',
-      //     images: [("ror.svg"), ("node.svg"),]
-      //   },
-      //   {
-      //     name: "Cloud Technologies",
-      //     description: 'Some Details',
-      //     images: [("ansible.svg"), ("aws.svg"), ("docker.svg"), ("elastic.svg"), ("terraform.svg"), ("puppet.svg"),]
-      //   },
-      //   {
-      //     name: "Frontend Development",
-      //     description: 'Some Details',
-      //     images: [("react.svg"), ("vue.svg"), ("java.svg"),]
-      //   },
-      // ],
+      //images: [("react.svg"), ("vue.svg"), ("java.svg"),]
       tech_stacks: [],
-      tech_stacks_errors: []
+      tech_stacks_errors: [],
     }
   }
 }
