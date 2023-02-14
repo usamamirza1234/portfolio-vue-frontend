@@ -4,10 +4,10 @@
       <div>
         <h3 class="title title--h3"> {{ name }} </h3>
         <p class="case-item__caption"> {{ description }} </p>
-        <div class="case_items_array"  v-for="x in tech_lang" v-bind:key="x">
-          <p class="case-item__icon"> x   </p>
-<!--          <img  class="case-item__icon" :src="require('@/assets/images/' + x.icon + '')"  alt="tech"/>-->
-        </div>
+        <img class="case-item__icon"
+             v-for="x in tech_lang"
+             v-bind:key="x"
+             v-bind:src=x.icon  >
       </div>
     </div>
   </div>

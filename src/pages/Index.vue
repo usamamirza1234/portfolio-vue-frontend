@@ -4,9 +4,10 @@
 
       <NavBar />
       <MySelf />
-      <WhatDoing v-if=" tech_stacks_errors.length == 0 "  :tech_stacks="tech_stacks" :errors="tech_stacks_errors" />
-      <MyTestimonials/>
-      <MyClients/>
+
+      <WhatDoing v-if=" tech_stacks.length > 0 "  :tech_stacks="tech_stacks" :errors="tech_stacks_errors" />
+<!--      <MyTestimonials/>-->
+<!--      <MyClients/>-->
     </div>
   </div>
 </template>
@@ -16,8 +17,8 @@
 import NavBar from "@/components/NavBar.vue";
 import MySelf from "@/components/component_index/MySelf.vue";
 import WhatDoing from "@/components/component_index/WhatDoing.vue";
-import MyTestimonials from "@/components/component_index/MyTestimonials.vue";
-import MyClients from "@/components/component_index/MyClients.vue";
+// import MyTestimonials from "@/components/component_index/MyTestimonials.vue";
+// import MyClients from "@/components/component_index/MyClients.vue";
 import { api_mixin } from '@/mixins/api_mixin'
 
 
@@ -38,8 +39,8 @@ export default {
     NavBar,
     MySelf,
     WhatDoing,
-    MyTestimonials,
-    MyClients,
+    // MyTestimonials,
+    // MyClients,
   },
   data: function () {
     return {

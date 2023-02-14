@@ -1,14 +1,14 @@
 <template>
 <div>
   <h2 class="title title--h2 mt-3">What I'm Doing</h2>
-  <div v-for="x in tech_stacks" v-bind:key="x" class="row">
-    <!-- Case Item -->
-    <DoingItems
-        :description=x.description
-        :tech_lang= x.tech_lang
-        :name=x.name
-    />
-
+  <div class="row">
+        <DoingItems
+            v-for="x in tech_stacks"
+            v-bind:key="x"
+            :description=x.description
+            :tech_lang= x.tech_lang
+            :name=x.name
+        />
   </div>
 </div>
 </template>

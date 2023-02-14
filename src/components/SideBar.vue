@@ -5,12 +5,11 @@
       <!-- My photo -->
       <div class="sidebar__base-info">
         <figure class="avatar-box">
-          <img
-              src="https://scontent.fmfg1-1.fna.fbcdn.net/v/t39.30808-6/310449519_1440392206469951_7620538697093453164_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=9zmu8YyKV9MAX8a9fOP&_nc_ht=scontent.fmfg1-1.fna&oh=00_AfBro_CeqAWGmL01istQSDVFu4k4qH0RxCP-RcmzDkiX3A&oe=63E51E8D" alt="Usama Mirza"/>
+          <img v-bind:src=this.profile.profile_image alt="Usama Mirza" >
         </figure>
 
         <div class="text-xl-center">
-          <h3 class="title title--h3 sidebar__name"> {{ this.profile.first_name + " " + this.profile.last_name }} </h3>
+          <h3 class="title title--h3 sidebar__name"> {{ this.profile.name }} </h3>
 
           <div class="badge"> {{ this.profile.headline }}</div>
         </div>
@@ -78,13 +77,13 @@ export default {
     MdPhonePortraitIcon,
     MdLocateIcon,
   },
-  async created() {
+  created() {
     this.set_profile()
   },
   data: function () {
     return {
       base_url: "http://localhost:3000/",
-      profile: []
+      profile: [],
     }
   },
   methods: {
