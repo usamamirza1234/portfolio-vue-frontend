@@ -4,8 +4,9 @@
       <div>
         <h3 class="title title--h3"> {{ name }} </h3>
         <p class="case-item__caption"> {{ description }} </p>
-        <div class="case_items_array"  v-for="x in images" v-bind:key="x">
-          <img  class="case-item__icon" :src="require('@/assets/images/' + x + '')"  alt="tech"/>
+        <div class="case_items_array"  v-for="x in tech_lang" v-bind:key="x">
+          <p class="case-item__icon"> x   </p>
+<!--          <img  class="case-item__icon" :src="require('@/assets/images/' + x.icon + '')"  alt="tech"/>-->
         </div>
       </div>
     </div>
@@ -18,7 +19,8 @@ export default {
   props: {
     name: String,
     description: String,
-    images: Array
+    tech_lang: Array,
+    // images: Array
   },
   data: function() {
     return {

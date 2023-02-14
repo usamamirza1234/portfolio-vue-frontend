@@ -13,6 +13,7 @@ import Resume from './pages/Resume.vue'
 import Contact from './pages/Contact.vue'
 import PageNotFound from "@/pages/PageNotFound.vue";
 
+
 Vue.config.productionTip = false
 Vue.use(VueRouter)
 Vue.use(BootstrapVue)
