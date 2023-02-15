@@ -4,7 +4,7 @@
       <NavBar/>
       <h1 class="title title--h1 title__separate">Resume</h1>
 
-      <MyExperience/>
+      <MyExperience v-if=" work_places.length > 0 "  :work_places="work_places" :errors="work_places_errors" />
       <MyEducation/>
       <MySkills/>
     </div>
@@ -17,9 +17,10 @@ import NavBar from "@/components/NavBar.vue";
 import MyEducation from "@/components/component_resume/MyEducation.vue";
 import MyExperience from "@/components/component_resume/MyExperience.vue";
 import MySkills from "@/components/component_resume/MySkills.vue";
-
+import { resume_api_mixin } from '@/mixins/resume_api_mixin'
 
 export default {
+  mixins: [resume_api_mixin],
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Resume",
   components: {
@@ -28,6 +29,12 @@ export default {
     MyExperience,
     MySkills,
   },
+  data: function () {
+    return {
+      work_places: [],
+      work_places_errors: [],
+    }
+  }
 }
 </script>
 
