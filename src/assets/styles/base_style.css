@@ -3225,7 +3225,7 @@ button:focus {
     border-left-color: var(--color-border);
     border-left-width: 1px;
     border-left-style: solid;
-    height: 3.75rem;
+    height: 100%;
     width: 1px;
     position: absolute;
     top: -1.875rem;

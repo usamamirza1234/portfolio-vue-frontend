@@ -4,8 +4,8 @@
       <NavBar/>
       <h1 class="title title--h1 title__separate">Resume</h1>
 
-      <MyExperience v-if=" work_places.length > 0 "  :work_places="work_places" :errors="work_places_errors" />
-      <MyEducation/>
+      <MyExperience v-if=" this.time_line.work_places.length > 0 "  :work_places="this.time_line.work_places" :errors="time_line_errors" />
+      <MyEducation  v-if=" this.time_line.educations.length > 0 "  :educations="this.time_line.educations" :errors="time_line_errors" />
       <MySkills/>
     </div>
   </div>
@@ -31,9 +31,11 @@ export default {
   },
   data: function () {
     return {
-      work_places: [],
-      work_places_errors: [],
+      time_line: [],
+      time_line_errors: [],
     }
+  }, mounted() {
+
   }
 }
 </script>

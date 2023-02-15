@@ -1,20 +1,32 @@
 <template>
   <div>
-    <div class="education"> <h2 class="title title--h2 "><span class="box icon-box"><i class="font-icon feathericon-book-open"></i></span>Education</h2></div>
-    <div class="timeline">
-      <!-- Item -->
-      <article class="timeline__item">
-        <h5 class="title title--h4 timeline__title">Quaid-i-Azam University</h5>
-        <span class="timeline__period">2016 - 2020</span>
-        <p class="timeline__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, aspernatur autem deleniti dolor doloribus dolorum error fugit laudantium, libero magnam nisi quis quod ratione repellendus tempora veniam voluptates voluptatibus voluptatum.</p>
-      </article>
-    </div>
+    <div class="education"> <h2 class="title title--h2 "><span class="box icon-box"><i class="font-icon"><MdBookIcon/></i></span>Education</h2></div>
+    <EducationInstitute  v-for="x in educations"
+                         v-bind:key="x"
+                         :last_date=x.last_date
+                         :joining_date=x.joining_date
+                         :institute_name=x.name
+                         :degree_name=x.degree_name
+                         :location=x.location
+                         :education_details= x.details
+    />
   </div>
 </template>
 
 <script>
+import EducationInstitute from "@/components/component_resume/EducationInstitute.vue";
+import MdBookIcon from 'vue-ionicons/dist/md-book.vue'
+
 export default {
-  name: "MyEducation"
+  name: "MyEducation",
+  props: {
+    educations: Array,
+    errors: Array,
+  },
+  components:{
+    EducationInstitute,
+    MdBookIcon
+  }
 }
 </script>
 
