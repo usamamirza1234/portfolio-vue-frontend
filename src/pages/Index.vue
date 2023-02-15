@@ -1,13 +1,12 @@
 <template>
   <div class="col-12 col-md-12 col-xl-9">
-    <div class="box-outer">
 
-      <NavBar />
-      <MySelf />
-
-      <WhatDoing v-if=" tech_stacks.length > 0 "  :tech_stacks="tech_stacks" :errors="tech_stacks_errors" />
-<!--      <MyTestimonials/>-->
-<!--      <MyClients/>-->
+    <div v-if=" tech_stacks.length > 0 " class="box-outer">
+      <NavBar v-if=" tech_stacks.length > 0 "/>
+      <MySelf v-if=" tech_stacks.length > 0 "/>
+      <WhatDoing v-if=" tech_stacks.length > 0 " :errors="tech_stacks_errors" :tech_stacks="tech_stacks"/>
+      <!--      <MyTestimonials/>-->
+      <!--      <MyClients/>-->
     </div>
   </div>
 </template>
@@ -19,8 +18,7 @@ import MySelf from "@/components/component_index/MySelf.vue";
 import WhatDoing from "@/components/component_index/WhatDoing.vue";
 // import MyTestimonials from "@/components/component_index/MyTestimonials.vue";
 // import MyClients from "@/components/component_index/MyClients.vue";
-import { api_mixin } from '@/mixins/api_mixin'
-
+import {api_mixin} from '@/mixins/api_mixin'
 
 
 // import GithubIcon from "vue-ionicons/dist/logo-github.vue";
@@ -44,7 +42,6 @@ export default {
   },
   data: function () {
     return {
-      //images: [("react.svg"), ("vue.svg"), ("java.svg"),]
       tech_stacks: [],
       tech_stacks_errors: [],
     }
