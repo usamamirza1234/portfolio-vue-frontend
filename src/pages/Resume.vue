@@ -3,7 +3,8 @@
     <div class="box-outer">
       <NavBar/>
       <h1 class="title title--h1 title__separate">Resume</h1>
-      <MyEducation/>
+
+      <MyExperience/>
       <MyEducation/>
       <MySkills/>
     </div>
@@ -14,6 +15,7 @@
 <script>
 import NavBar from "@/components/NavBar.vue";
 import MyEducation from "@/components/component_resume/MyEducation.vue";
+import MyExperience from "@/components/component_resume/MyExperience.vue";
 import MySkills from "@/components/component_resume/MySkills.vue";
 
 
@@ -23,6 +25,7 @@ export default {
   components: {
     NavBar,
     MyEducation,
+    MyExperience,
     MySkills,
   },
 }

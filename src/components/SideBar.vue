@@ -10,7 +10,6 @@
 
         <div class="text-xl-center">
           <h3 class="title title--h3 sidebar__name"> {{ this.profile.name }} </h3>
-
           <div class="badge"> {{ this.profile.headline }}</div>
         </div>
       </div>
@@ -68,6 +67,7 @@ import MailIcon from "vue-ionicons/dist/md-mail.vue";
 import MdCalendarIcon from 'vue-ionicons/dist/md-calendar.vue'
 import MdPhonePortraitIcon from 'vue-ionicons/dist/md-phone-portrait.vue'
 import MdLocateIcon from 'vue-ionicons/dist/md-locate.vue'
+
 import axios from "axios";
 export default {
   name: "SideBar",
