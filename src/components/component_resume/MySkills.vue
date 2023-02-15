@@ -1,18 +1,29 @@
 <template>
 <div>
   <h2 class="title title--h2 mt-3">My Skills</h2>
-  <div class="box box-inner mb-0">
-    <div class="progress">
-      <div class="progress-text"><span>Ruby on Rails</span> 80%</div>
-      <div class="progress-bar"><span role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%; z-index: 2;"></span></div>
-    </div>
-  </div>
+  <SkillItem
+      v-for="x in skills"
+      v-bind:key="x"
+      :tech_name=x.tech_name
+      :skill_level=x.skill_level
+  />
+
 </div>
 </template>
 
 <script>
+
+import SkillItem from "@/components/component_resume/SkillItem.vue";
+
 export default {
-  name: "MySkills"
+  name: "MySkills",
+  components: {
+    SkillItem,
+  },
+  props: {
+    skills: Array,
+    errors: Array,
+  },
 }
 </script>
 
