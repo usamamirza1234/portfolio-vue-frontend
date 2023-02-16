@@ -1,8 +1,10 @@
 <template>
   <div class="box box-inner mb-0">
     <div class="progress">
-      <div class="progress-text"><span> {{tech_name}} </span> {{skill_level}}%</div>
-      <div class="progress-bar"><span role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%; z-index: 2;"></span></div>
+      <div class="progress-text"><span> {{ tech_name }} </span> {{ skill_level }}%</div>
+      <div class="progress-bar"><span :style="{'width': skill_level + '%'} " aria-valuemax="100" aria-valuemin="0"
+                                      role="progressbar"
+      ></span></div>
     </div>
   </div>
 </template>
