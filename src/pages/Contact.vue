@@ -53,7 +53,8 @@ export default {
       emailContact: "",
       loading: false,
       submitting: false,
-      base_url: "http://localhost:3000/"
+      base_url: "http://35.78.199.156/",
+      // base_url: "http://localhost:3000/"
     };
   },
   methods: {

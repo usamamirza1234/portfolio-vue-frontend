@@ -88,20 +88,6 @@ export default {
     }
   },
   methods: {
-    // set_profile() {
-    //   axios.defaults.headers.common['Authorization'] = "Bearer 5KTYX0qc3tSL7oYAWJx4_f1EghTUIiaCF6Wo2adFcuU";
-    //   axios.get(this.base_url + `api/v1/users/get_profile`)
-    //       .then(response => {
-    //         console.log(response.data.data.user)
-    //         // JSON responses are automatically parsed.
-    //         this.profile = response.data.data.user
-    //         localStorage.setItem("user_profile", JSON.stringify(this.profile));
-    //       })
-    //       .catch(e => {
-    //         this.profile_errors.push(e)
-    //         // console.log( this.errors)
-    //       })
-    // }
   }
 }
 </script>

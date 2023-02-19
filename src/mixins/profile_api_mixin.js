@@ -6,15 +6,18 @@ export const profile_api_mixin = {
             this.getProfile()
     }, data() {
         return {
-            base_url: "http://localhost:3000/",
-            message: 'Profile Mixin Loaded! hurray!!! .', profile: [],  profile_errors: [],
+            // base_url: "http://localhost:3000/",
+            base_url: "http://35.78.199.156/",
+            message: 'Profile Mixin Loaded! hurray!!! .',
+            profile: [],
+            profile_errors: [],
         }
     }, methods: {
         logMessage() {
             console.log(this.message)
         },
         getProfile() {
-            axios.defaults.headers.common['Authorization'] = "Bearer 5KTYX0qc3tSL7oYAWJx4_f1EghTUIiaCF6Wo2adFcuU";
+            // axios.defaults.headers.common['Authorization'] = "Bearer 9XdbX-mpwHY753GMB401PiYx5kHPzD3urQvfNF8yfQA";
             axios.get(this.base_url + `api/v1/users/get_profile`)
                 .then(response => {
                     console.log("API-- getProfile")
