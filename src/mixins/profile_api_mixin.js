@@ -17,7 +17,7 @@ export const profile_api_mixin = {
             console.log(this.message)
         },
         getProfile() {
-            // axios.defaults.headers.common['Authorization'] = "Bearer 9XdbX-mpwHY753GMB401PiYx5kHPzD3urQvfNF8yfQA";
+            // axios.defaults.headers.common['Authorization'] = "Bearer";
             axios.get(this.base_url + `api/v1/users/get_profile`)
                 .then(response => {
                     console.log("API-- getProfile")

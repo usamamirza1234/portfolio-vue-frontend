@@ -19,7 +19,7 @@ export const resume_api_mixin = {
             console.log(this.message)
         },
         getTimeLine() {
-            // axios.defaults.headers.common['Authorization'] = "Bearer _gzB2YOLyYm2xwrxkunNf4URY9iEX3v51e5Q7yHG4Sk";
+            // axios.defaults.headers.common['Authorization'] = "Bearer ";
             axios.get(this.base_url + `api/v1/time_line/get_time_line`)
                 .then(response => {
                     // console.log(response)
