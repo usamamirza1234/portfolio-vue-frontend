@@ -7,7 +7,7 @@ export const profile_api_mixin = {
     }, data() {
         return {
             // base_url: "http://localhost:3000/",
-            base_url: "http://35.78.199.156/",
+            base_url: "https://35.78.199.156/",
             message: 'Profile Mixin Loaded! hurray!!! .',
             profile: [],
             profile_errors: [],
