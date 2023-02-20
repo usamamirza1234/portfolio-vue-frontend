@@ -33,8 +33,8 @@ export default {
   },
   data: function () {
     return {
-      time_line: [],
-      time_line_errors: [],
+      // time_line: [],
+      // time_line_errors: [],
     }
   }, mounted() {
 

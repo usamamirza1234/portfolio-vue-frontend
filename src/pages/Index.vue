@@ -42,8 +42,8 @@ export default {
   },
   data: function () {
     return {
-      tech_stacks: [],
-      tech_stacks_errors: [],
+      // tech_stacks: [],
+      // tech_stacks_errors: [],
     }
   }
 }

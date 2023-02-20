@@ -2,14 +2,16 @@ import axios from "axios";
 
 export const profile_api_mixin = {
     created() {
-            this.logMessage(),
-            this.getProfile()
+            this.logMessage()
+            //, this.getProfile()
     }, data() {
         return {
-            // base_url: "http://localhost:3000/",
-            base_url: "http://35.78.199.156/",
+            base_url: "http://localhost:3000/",
+            // base_url: "http://35.78.199.156/",
             message: 'Profile Mixin Loaded! hurray!!! .',
-            profile: [],
+            profile: [
+                // {"name":" ","headline":null,"email":"usamak.mirza@gmail.com","phone_number":null,"dob":null,"city":null,"country":null,"about_me":null,"profile_image":""}
+            ],
             profile_errors: [],
         }
     }, methods: {
@@ -25,6 +27,7 @@ export const profile_api_mixin = {
                     console.log(this.profile)
                     console.log("-- getProfile --")
                     localStorage.setItem("user_profile", JSON.stringify(this.profile));
+                    console.log(JSON.stringify(this.profile))
                 })
                 .catch(e => {
                     this.profile_errors.push(e)
