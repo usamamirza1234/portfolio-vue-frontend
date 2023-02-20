@@ -26,17 +26,35 @@ export const api_mixin = {
                 },
                 {
                     "id": 2,
+                    "name": "Cloud Stack",
+                    "description": "Development",
+                    "tech_lang": [
+                        {
+                            "id": 1,
+                            "name": "AWS",
+                            "description": "text",
+                            "icon": "https://usamamirza-portfolios.s3.eu-central-1.amazonaws.com/434427ii5lm75i09tj0a36ylu41n?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBIaCmFwLXNvdXRoLTEiRzBFAiEApt6wc1bgp%2FtyuRbjf%2B0edvy6whCeOzXmYbUQwW9TBBkCICR5D8Y88kBRIy6jglRAidEHwRlPmwWG45s2Ze0RxQRsKu0CCKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMODM1ODQ3MjE2ODY2IgzwX5jOPr93MMvLwKoqwQI2Qww0qchtlhafzOiIE2AdMSXd%2FAZ4oTFv9qt%2FJsXNNFu42plrJkDK%2FAjWFoKnPgSGZHCcRL4ngnWNDCX5j6KopQW8qLdwaME0GmknoWgo4yO4JCTPaHPpvITvCRBXWhiWvkdldef%2BzUTyU%2BkPKmaZiJC12oKahycRNgpj9NaqnBdvKts1vPDa5AUjpcfpwmjrBpANH4wKXPD95usgDmeabeEYnnJjtKfYzkIZ5o1qNisdusDnEvBL%2F9XEZPv%2Bkp%2FNJNMwlBEyiBj3bjgsS5xkc89qGC78%2FyfKTztzTWW9GxyLQxLIadCJiSfXCgkp%2BAjv0geRhwOqrXW%2Frk5ja8eI5zDZQqTHI6JoqHo%2BRHa6CLVJ0N9HA5t5dYAfi1SAHX3PY8SqYzp6bsW%2B1%2FvUjvrD2zcMH7Id1vnwA2%2BJLLoueNAw1rTMnwY6swI3AiEOSMATYQrm%2F1GUoVN%2FmvqCdRjbvDKosUL569HJFTT0EYQng5XaptR7MFZHALQycc85%2FQ2q1FzPVq99EobEvJnIlOGihMe%2Bnuu82T1DMa%2BvPH0eRXGkVOXWCSAEqaTYifLyBnsewJ3yc90Ng17s2d0leM949Zb%2FGlHw5elSmrzvf59kvCoiAsvHDWmc426vflkCjCiuVYOhvDA%2B582xltbNuFhMWhL3OtPGh9ejEXQ0OlJ8cNGSEJAL8jcIimth22tgr3EYy7cMlXyfhBmAnt6ayIOIcB7ILIpNd12fqct9cHofu%2BwoEhYcJ7T0RjEGU%2FqFkmO4lEVf7yry%2FjfoehDyJBknFK%2F48FzpV24HE%2F9aMRrhl3nzRQdg5jWHVpSOFyNutaPRFpr47BsnI%2FN6upPY&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230220T173835Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIA4FHDAL3RLQJROBLE%2F20230220%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=1e83e32f3754c9cb2f859268f28bd41b55b90424e521c840d15f143691038210"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Ansible",
+                            "description": "text",
+                            "icon": "https://usamamirza-portfolios.s3.eu-central-1.amazonaws.com/59igqh48azm5ngt12p639gkt1q6t?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBIaCmFwLXNvdXRoLTEiRzBFAiEApt6wc1bgp%2FtyuRbjf%2B0edvy6whCeOzXmYbUQwW9TBBkCICR5D8Y88kBRIy6jglRAidEHwRlPmwWG45s2Ze0RxQRsKu0CCKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMODM1ODQ3MjE2ODY2IgzwX5jOPr93MMvLwKoqwQI2Qww0qchtlhafzOiIE2AdMSXd%2FAZ4oTFv9qt%2FJsXNNFu42plrJkDK%2FAjWFoKnPgSGZHCcRL4ngnWNDCX5j6KopQW8qLdwaME0GmknoWgo4yO4JCTPaHPpvITvCRBXWhiWvkdldef%2BzUTyU%2BkPKmaZiJC12oKahycRNgpj9NaqnBdvKts1vPDa5AUjpcfpwmjrBpANH4wKXPD95usgDmeabeEYnnJjtKfYzkIZ5o1qNisdusDnEvBL%2F9XEZPv%2Bkp%2FNJNMwlBEyiBj3bjgsS5xkc89qGC78%2FyfKTztzTWW9GxyLQxLIadCJiSfXCgkp%2BAjv0geRhwOqrXW%2Frk5ja8eI5zDZQqTHI6JoqHo%2BRHa6CLVJ0N9HA5t5dYAfi1SAHX3PY8SqYzp6bsW%2B1%2FvUjvrD2zcMH7Id1vnwA2%2BJLLoueNAw1rTMnwY6swI3AiEOSMATYQrm%2F1GUoVN%2FmvqCdRjbvDKosUL569HJFTT0EYQng5XaptR7MFZHALQycc85%2FQ2q1FzPVq99EobEvJnIlOGihMe%2Bnuu82T1DMa%2BvPH0eRXGkVOXWCSAEqaTYifLyBnsewJ3yc90Ng17s2d0leM949Zb%2FGlHw5elSmrzvf59kvCoiAsvHDWmc426vflkCjCiuVYOhvDA%2B582xltbNuFhMWhL3OtPGh9ejEXQ0OlJ8cNGSEJAL8jcIimth22tgr3EYy7cMlXyfhBmAnt6ayIOIcB7ILIpNd12fqct9cHofu%2BwoEhYcJ7T0RjEGU%2FqFkmO4lEVf7yry%2FjfoehDyJBknFK%2F48FzpV24HE%2F9aMRrhl3nzRQdg5jWHVpSOFyNutaPRFpr47BsnI%2FN6upPY&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230220T173958Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIA4FHDAL3RLQJROBLE%2F20230220%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=7d04ccc2c7535e8d998c4452d39e25d25fe3a45ef0a9d54634000b22bef3b5c3"
+                        },
+                    ]
+                },  {
+                    "id": 3,
                     "name": "Frontend Development",
                     "description": "Development",
                     "tech_lang": [
                         {
-                            "id": 2,
-                            "name": "string",
+                            "id": 1,
+                            "name": "Vue.js",
                             "description": "text",
-                            "icon": "http://localhost:3000/api/v1/tech_stacks"
+                            "icon": "https://usamamirza-portfolios.s3.eu-central-1.amazonaws.com/locyf2rq1p7wv4xvja80xnag2ijo?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBIaCmFwLXNvdXRoLTEiRzBFAiEApt6wc1bgp%2FtyuRbjf%2B0edvy6whCeOzXmYbUQwW9TBBkCICR5D8Y88kBRIy6jglRAidEHwRlPmwWG45s2Ze0RxQRsKu0CCKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMODM1ODQ3MjE2ODY2IgzwX5jOPr93MMvLwKoqwQI2Qww0qchtlhafzOiIE2AdMSXd%2FAZ4oTFv9qt%2FJsXNNFu42plrJkDK%2FAjWFoKnPgSGZHCcRL4ngnWNDCX5j6KopQW8qLdwaME0GmknoWgo4yO4JCTPaHPpvITvCRBXWhiWvkdldef%2BzUTyU%2BkPKmaZiJC12oKahycRNgpj9NaqnBdvKts1vPDa5AUjpcfpwmjrBpANH4wKXPD95usgDmeabeEYnnJjtKfYzkIZ5o1qNisdusDnEvBL%2F9XEZPv%2Bkp%2FNJNMwlBEyiBj3bjgsS5xkc89qGC78%2FyfKTztzTWW9GxyLQxLIadCJiSfXCgkp%2BAjv0geRhwOqrXW%2Frk5ja8eI5zDZQqTHI6JoqHo%2BRHa6CLVJ0N9HA5t5dYAfi1SAHX3PY8SqYzp6bsW%2B1%2FvUjvrD2zcMH7Id1vnwA2%2BJLLoueNAw1rTMnwY6swI3AiEOSMATYQrm%2F1GUoVN%2FmvqCdRjbvDKosUL569HJFTT0EYQng5XaptR7MFZHALQycc85%2FQ2q1FzPVq99EobEvJnIlOGihMe%2Bnuu82T1DMa%2BvPH0eRXGkVOXWCSAEqaTYifLyBnsewJ3yc90Ng17s2d0leM949Zb%2FGlHw5elSmrzvf59kvCoiAsvHDWmc426vflkCjCiuVYOhvDA%2B582xltbNuFhMWhL3OtPGh9ejEXQ0OlJ8cNGSEJAL8jcIimth22tgr3EYy7cMlXyfhBmAnt6ayIOIcB7ILIpNd12fqct9cHofu%2BwoEhYcJ7T0RjEGU%2FqFkmO4lEVf7yry%2FjfoehDyJBknFK%2F48FzpV24HE%2F9aMRrhl3nzRQdg5jWHVpSOFyNutaPRFpr47BsnI%2FN6upPY&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230220T174048Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIA4FHDAL3RLQJROBLE%2F20230220%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=7dbf7ec574712912af0364b651f7b2e739c697c150e7da873ca8c1a38b544083"
                         }
                     ]
-                }
+                },
             ],
             tech_stacks_errors: [],
             profile: undefined,
