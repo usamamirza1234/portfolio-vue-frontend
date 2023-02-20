@@ -3,8 +3,8 @@
   <h2 class="title title--h2 mt-3">What I'm Doing</h2>
   <div class="row">
         <DoingItems
-            v-for="x in tech_stacks"
-            v-bind:key="x"
+            v-for="(x,index) in tech_stacks"
+            v-bind:key="index"
             :description=x.description
             :tech_lang= x.tech_lang
             :name=x.name

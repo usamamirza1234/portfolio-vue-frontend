@@ -2,8 +2,8 @@
 <div>
   <h2 class="title title--h2 mt-3">My Skills</h2>
   <SkillItem
-      v-for="x in skills"
-      v-bind:key="x"
+      v-for="(x, index) in skills"
+      v-bind:key="index"
       :tech_name=x.tech_name
       :skill_level=x.skill_level
   />

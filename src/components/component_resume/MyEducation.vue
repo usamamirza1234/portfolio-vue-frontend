@@ -1,8 +1,9 @@
 <template>
   <div>
     <div class="education"> <h2 class="title title--h2 "><span class="box icon-box"><i class="font-icon"><MdBookIcon/></i></span>Education</h2></div>
-    <EducationInstitute  v-for="x in educations"
-                         v-bind:key="x"
+    <EducationInstitute
+        v-for="(x, index) in educations "
+                         v-bind:key="index"
                          :last_date=x.last_date
                          :joining_date=x.joining_date
                          :institute_name=x.name

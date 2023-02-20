@@ -9,8 +9,8 @@
       </div>
     </div>
     <MyRoles
-        v-for="x in roles"
-        v-bind:key="x"
+        v-for="(x,index) in roles"
+        v-bind:key="index"
         :end_date=x.end_date
         :start_date=x.start_date
         :role=x.role

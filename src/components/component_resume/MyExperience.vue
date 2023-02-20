@@ -6,8 +6,8 @@
     </h2>
 
     <MyWorkPlaces
-        v-for="x in work_places"
-        v-bind:key="x"
+        v-for="(x, index) in work_places "
+        v-bind:key="index"
         :last_date=x.last_date
         :joining_date=x.joining_date
         :name=x.name

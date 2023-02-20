@@ -5,9 +5,10 @@
         <h3 class="title title--h3"> {{ name }} </h3>
         <p class="case-item__caption"> {{ description }} </p>
         <img class="case-item__icon"
-             v-for="x in tech_lang"
-             v-bind:key="x"
+             v-for="(x, index) in tech_lang "
+             v-bind:key="index"
              v-bind:src=x.icon  >
+
       </div>
     </div>
   </div>
