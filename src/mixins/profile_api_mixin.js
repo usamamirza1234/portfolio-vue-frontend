@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const profile_api_mixin = {
     created() {
-            this.logMessage()
+            // this.logMessage()
             //, this.getProfile()
     }, data() {
         return {

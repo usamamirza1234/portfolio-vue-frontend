@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const api_mixin = {
     created() {
-            this.logMessage()
+            // this.logMessage()
                 // , this.getTechStack()
     }, data() {
         return {
