@@ -11,7 +11,8 @@ export const resume_api_mixin = {
                     "joining_date": "December, 2020",
                     "name": "Veroke",
                     "designation": "FullStack Developer",
-                    "work_place_logo": "https://usamamirza-portfolios.s3.eu-central-1.amazonaws.com/veroke.jpeg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBIaCmFwLXNvdXRoLTEiRzBFAiEApt6wc1bgp%2FtyuRbjf%2B0edvy6whCeOzXmYbUQwW9TBBkCICR5D8Y88kBRIy6jglRAidEHwRlPmwWG45s2Ze0RxQRsKu0CCKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMODM1ODQ3MjE2ODY2IgzwX5jOPr93MMvLwKoqwQI2Qww0qchtlhafzOiIE2AdMSXd%2FAZ4oTFv9qt%2FJsXNNFu42plrJkDK%2FAjWFoKnPgSGZHCcRL4ngnWNDCX5j6KopQW8qLdwaME0GmknoWgo4yO4JCTPaHPpvITvCRBXWhiWvkdldef%2BzUTyU%2BkPKmaZiJC12oKahycRNgpj9NaqnBdvKts1vPDa5AUjpcfpwmjrBpANH4wKXPD95usgDmeabeEYnnJjtKfYzkIZ5o1qNisdusDnEvBL%2F9XEZPv%2Bkp%2FNJNMwlBEyiBj3bjgsS5xkc89qGC78%2FyfKTztzTWW9GxyLQxLIadCJiSfXCgkp%2BAjv0geRhwOqrXW%2Frk5ja8eI5zDZQqTHI6JoqHo%2BRHa6CLVJ0N9HA5t5dYAfi1SAHX3PY8SqYzp6bsW%2B1%2FvUjvrD2zcMH7Id1vnwA2%2BJLLoueNAw1rTMnwY6swI3AiEOSMATYQrm%2F1GUoVN%2FmvqCdRjbvDKosUL569HJFTT0EYQng5XaptR7MFZHALQycc85%2FQ2q1FzPVq99EobEvJnIlOGihMe%2Bnuu82T1DMa%2BvPH0eRXGkVOXWCSAEqaTYifLyBnsewJ3yc90Ng17s2d0leM949Zb%2FGlHw5elSmrzvf59kvCoiAsvHDWmc426vflkCjCiuVYOhvDA%2B582xltbNuFhMWhL3OtPGh9ejEXQ0OlJ8cNGSEJAL8jcIimth22tgr3EYy7cMlXyfhBmAnt6ayIOIcB7ILIpNd12fqct9cHofu%2BwoEhYcJ7T0RjEGU%2FqFkmO4lEVf7yry%2FjfoehDyJBknFK%2F48FzpV24HE%2F9aMRrhl3nzRQdg5jWHVpSOFyNutaPRFpr47BsnI%2FN6upPY&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230220T174548Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIA4FHDAL3RLQJROBLE%2F20230220%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=e04ce2b4e8a209a46d2b34d2e71aa7054597a6aa12a4b7d27972c4a3b8f178c6",
+                    "work_place_logo": require(`../assets/images/veroke.jpeg`),
+                    // "work_place_logo": "https://usamamirza-portfolios.s3.eu-central-1.amazonaws.com/veroke.jpeg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECcaCmFwLXNvdXRoLTEiSDBGAiEAraM8GDtPPHTq8WX%2BuqUWwPXlLF1W1GBif3UM7Pa%2F6xcCIQCI40BMmB9tQSGdykAUG6EMmd37WrkjnGO0WdKXm2kWjCrtAgjA%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDgzNTg0NzIxNjg2NiIMSv%2BuM%2FgEp7lf0bYqKsECyV8msE8QLAa2S%2FQcnWIPoh5%2BXBhLwrB6vfMnUav2ZsWygUGEHLfMvoomiOce2Pxl0M3GBmPSYBt8PJcvtx%2BaYmmVjrgrGmh4q5Xe3TVunxJLT9XAMurThuV3W4LU%2BepxgkBSMjm4HXsrsxv6zSyJ00%2FSprBuBgKslpigXFxg45eVO5PpUucQ2Zwe3%2F%2Fxqb%2BIZD7gP3JB7XFcAyfHGcq75IoXuIkPSCjVmEHY2sjgTyWQ6TEkizQ1aM3CBua7hjp0r58ORuqjjiFQADSO8vT8b5%2FLzOfljoVYdfHtX9687DJHpeko9P2%2BiWvbPhXvfy1mq7NDoZxO%2FjwsGyM3tE%2F3HC%2FG1k5h2m2%2FqEc6506FSCPg1XMsMasXkXG10DRJegVtr03mc0GDuYbxCx4qOEiWqeJj0nkJUjSH2dexYughXDC0MNCt0p8GOrICbOVolIWgklgIo5apNQAK9OIYZXoEZr1z0oxzvdb5INSeZZF1CsNru8CVPCwQvxiwygV%2Fcm%2F8DqIgspNQAyEv1CaY4F54YmNTZuasFVmuzCQ9wGQOBVJC1OcIXZ3NVMyULhxaaMzlyXNPVN83QL8AU9n03KxrVJ7BBX3%2F34mhAssecLK%2BDLrItuOHbFm7%2FjsMcL9t8FOOsxzS4DcFza80KKHFS0KrEhMVN1K0PGmtWusKBysxOzv%2FEM63gULYj1WTRF7wUPv0LFDLTGWZ6vZZYiobvuLNgNyzeY9fAUDgH8OjGhlYFYrQFffp85gC3uAQ1rQ77ZPddSo8irhPcSVtF9pQRtDL9YFfrZexd5SKTwmXFCETmvlUeYRRsjt1uDaKjmAhIz0r93tZHsgZDRgXkfhH&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230221T151143Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIA4FHDAL3RBBH3QB4R%2F20230221%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=f0cb547f264ac67348a2d16331ea63109bfaf513fb77a60383db13f291413c33",
                     "roles": [{
                         "id": 1,
                         "end_date": "Present",
@@ -32,7 +33,7 @@ export const resume_api_mixin = {
                     "joining_date": "June, 2020",
                     "name": "AST",
                     "designation": "FullStack Developer",
-                    "work_place_logo": "https://usamamirza-portfolios.s3.eu-central-1.amazonaws.com/y0uha1c9m09365lgsqboiez5itea?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBIaCmFwLXNvdXRoLTEiRzBFAiEApt6wc1bgp%2FtyuRbjf%2B0edvy6whCeOzXmYbUQwW9TBBkCICR5D8Y88kBRIy6jglRAidEHwRlPmwWG45s2Ze0RxQRsKu0CCKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMODM1ODQ3MjE2ODY2IgzwX5jOPr93MMvLwKoqwQI2Qww0qchtlhafzOiIE2AdMSXd%2FAZ4oTFv9qt%2FJsXNNFu42plrJkDK%2FAjWFoKnPgSGZHCcRL4ngnWNDCX5j6KopQW8qLdwaME0GmknoWgo4yO4JCTPaHPpvITvCRBXWhiWvkdldef%2BzUTyU%2BkPKmaZiJC12oKahycRNgpj9NaqnBdvKts1vPDa5AUjpcfpwmjrBpANH4wKXPD95usgDmeabeEYnnJjtKfYzkIZ5o1qNisdusDnEvBL%2F9XEZPv%2Bkp%2FNJNMwlBEyiBj3bjgsS5xkc89qGC78%2FyfKTztzTWW9GxyLQxLIadCJiSfXCgkp%2BAjv0geRhwOqrXW%2Frk5ja8eI5zDZQqTHI6JoqHo%2BRHa6CLVJ0N9HA5t5dYAfi1SAHX3PY8SqYzp6bsW%2B1%2FvUjvrD2zcMH7Id1vnwA2%2BJLLoueNAw1rTMnwY6swI3AiEOSMATYQrm%2F1GUoVN%2FmvqCdRjbvDKosUL569HJFTT0EYQng5XaptR7MFZHALQycc85%2FQ2q1FzPVq99EobEvJnIlOGihMe%2Bnuu82T1DMa%2BvPH0eRXGkVOXWCSAEqaTYifLyBnsewJ3yc90Ng17s2d0leM949Zb%2FGlHw5elSmrzvf59kvCoiAsvHDWmc426vflkCjCiuVYOhvDA%2B582xltbNuFhMWhL3OtPGh9ejEXQ0OlJ8cNGSEJAL8jcIimth22tgr3EYy7cMlXyfhBmAnt6ayIOIcB7ILIpNd12fqct9cHofu%2BwoEhYcJ7T0RjEGU%2FqFkmO4lEVf7yry%2FjfoehDyJBknFK%2F48FzpV24HE%2F9aMRrhl3nzRQdg5jWHVpSOFyNutaPRFpr47BsnI%2FN6upPY&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230220T173715Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIA4FHDAL3RLQJROBLE%2F20230220%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=e3370aa388e09ae6b2f11a91bdbb183cd85807a302f51ed688d828e1bb630f21",
+                    "work_place_logo": require(`../assets/images/ast.jpg`),
                     "roles": [{
                         "id": 1,
                         "end_date": "December, 2020",
@@ -49,24 +50,35 @@ export const resume_api_mixin = {
                     "location": "Islamabad, Pakistan"
                 }], "educations": [{
                     "id": 1,
-                    "last_date": "February, 2023",
-                    "joining_date": "February, 2023",
-                    "name": "nil",
-                    "degree_name": "nil",
-                    "location": "nil, nil",
-                    "details": "nil"
+                    "last_date": "December, 2020",
+                    "joining_date": "September, 2016",
+                    "name": "Quaid-i-Azam University",
+                    "degree_name": "BS Information Technology",
+                    "location": "Islamabad, Pakistan",
+                    "details": ""
                 }, {
                     "id": 2,
-                    "last_date": "February, 2023",
-                    "joining_date": "February, 2023",
-                    "name": "nil",
-                    "degree_name": "nil",
-                    "location": "nil, nil",
-                    "details": "nil"
-                }], "skills": [{
-                    "id": 1, "tech_name": "string", "skill_level": 20
+                    "last_date": "August, 2016",
+                    "joining_date": "March, 2014",
+                    "name": "Islamabad Model College for Boys",
+                    "degree_name": "Intermediate",
+                    "location": "Islamabad, Pakistan",
+                    "details": ""
+                },
+                     {
+                         "id": 4,
+                         "last_date": "May, 2014",
+                         "joining_date": "March, 2012",
+                         "name": "Sideeq Public School",
+                         "degree_name": "Matriculation",
+                         "location": "Rawalpindi, Pakistan",
+                         "details": ""
+                     }
+                ]
+                 , "skills": [{
+                    "id": 1, "tech_name": "Ruby On Rails", "skill_level": 80
                 }, {
-                    "id": 2, "tech_name": "string", "skill_level": 60
+                    "id": 2, "tech_name": "Vue.js", "skill_level": 60
                 }], "certifications": null
             }, time_line_errors: [],
             base_url: "http://localhost:3000/", // base_url: "http://35.78.199.156/",

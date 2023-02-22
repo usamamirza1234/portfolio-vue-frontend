@@ -83,8 +83,8 @@ export default {
   },
   data: function () {
     return {
-      profile: [],
-      profile_errors: [],
+      // profile: [],
+      // profile_errors: [],
     }
   },
   methods: {
